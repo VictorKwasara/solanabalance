@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 import styles from '../styles/AddressForm.module.css'
-
+import {motion} from "framer-motion";
 function AddressForm(props: { handler: (address: string) => void }) {
 
   const [values, setValues] = useState({
@@ -21,7 +21,7 @@ function AddressForm(props: { handler: (address: string) => void }) {
   };
 
   return (
-    <div className={styles.Form}>
+    <motion.div whileHover={{  }}className={styles.Form}>
       <form onSubmit={handleSubmit}>
         <input
           id="public-key"
@@ -33,11 +33,11 @@ function AddressForm(props: { handler: (address: string) => void }) {
           onChange={handleAddressInputChange}
         />
         <br />
-        <button type="submit" className={styles.formButton}>
+        <motion.button whileHover={{scale: 1.05}} type="submit" className={styles.formButton}>
           Check SOL Balance
-        </button>
+        </motion.button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 

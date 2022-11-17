@@ -4,9 +4,10 @@
   
 .formField {
   margin: 10px 0 10px 0;
-  min-width: 500px;
+  width: 500px;
   padding: 15px;
   font-size: 16px;
+  border-radius: 5px ;
   border: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -16,4 +17,33 @@
   font-size: 16px;
   border: 0;
   font-family: "Roboto", sans-serif;
+  border-radius: 5px ;
+  background-color: #007761;
+}
+
+.Form {
+  background-image: radial-gradient(circle, #d7ffc6, #d8ffc7, #d8ffc7, #d9ffc8, #d9ffc8, #d8ffc6, #d6ffc4, #d5ffc2, #d1ffbd, #ceffb8, #caffb3, #c6ffae);
+  width: 55vw;
+  height: auto ;
+  padding: 10px ;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 900px){
+
+  .Form { 
+  width: auto ;
+  height: auto ;
+  padding: 10px ;
+  }
+  .formField {
+  margin: 10px 0 10px 0;
+  width: 90vw;
+  padding: 15px;
+  font-size: 10px;
+  border-radius: 5px ;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 }

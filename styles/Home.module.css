@@ -1,14 +1,64 @@
 .App {
   text-align: center;
+  width: 100vw ;
+  height: 100vh ;
+  /* background-color: red; */
 }
 
 .AppHeader {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: linear-gradient(to right top, #4ed030, #62d52c, #74da27, #86df23, #96e41e, #96e41e, #96e41e, #96e41e, #86df23, #74da27, #62d52c, #4ed030);
+  height: 100vh;
+  width: 100vw ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
+}
+
+.Result {
+
+  font-size: 20px ;
+  font-weight: bold ;
+}
+
+.Topic {
+  font-size: 50px ;
+  font-weight: bolder ;
+
+}
+
+.ResultBox {
+  background-image: linear-gradient(to right bottom, #323113, #343313, #373513, #393812, #3c3a12, #3c3a12, #3c3a11, #3c3a11, #3a3811, #383611, #363511, #343311);
+  width: 55vw ;
+  height: auto ;
+  padding: 10px ;
+  margin-top: 10px ;
+  border-radius: 10px ;
+}
+
+@media screen and (max-width: 900px){
+
+  .Topic {
+  font-size: 15px ;
+  font-weight: bolder ;
+
+  }
+
+  .Result {
+  font-size: 10px ;
+  font-weight: bold ;
+  }
+
+  .ResultBox {
+  width: 95vw ;
+  height: auto ;
+  padding: 10px ;
+  margin-top: 10px ;
+  border-radius: 10px ;
+  }
+
+
 }
