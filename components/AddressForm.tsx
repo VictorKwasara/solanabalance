@@ -21,7 +21,7 @@ function AddressForm(props: { handler: (address: string) => void }) {
   };
 
   return (
-    <div className={styles.Form}>
+    <div class={styles.Form}>
       <form onSubmit={handleSubmit}>
         <input
           id="public-key"
